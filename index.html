@@ -4,25 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BrainNudge</title>
-    <!-- Starting the basic structure of the website for the ADHD productivity tool -->
-    <!-- This will be a simple layout -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="app">
+    <header>
         <h1>BrainNudge</h1>
-        <div id="nudge-box">
-            <p id="nudge-text">placeholder text</p>
-            <button id="done-btn">Done</button>
-            <p id="after-message" class="hidden">Come back tomorrow for your next nudge!</p>
-        </div>
+        <p>One gentle nudge at a time</p>
+    </header>
+    <main>
+        <!-- Initially show this button -->
+        <button id="nudge-btn">Get Nudge</button>
 
-    </div>
-   <!-- TODO List for BrainNudge (ironic)-->
-    <!-- 1. Create a daily nudge feature -->
-    <!-- 2. Build a responsive layout -->
-    <!-- 3. Add simple interactivity with JavaScript -->
-    <!-- 4. Design a minimalist dashboard -->
+        <!-- This is hidden by default -->
+        <div id="nudge-prompt" class="hidden">
+            <p>You've completed today's nudge! Go reward yourself.</p>
+            <!-- Initially hidden -->
+            <button id="done-btn" class="hidden">Done</button>
+        </div>
+    </main>
     <script src="app.js"></script>
 </body>
 </html>

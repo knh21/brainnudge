@@ -12,16 +12,20 @@
         <p>One gentle nudge at a time</p>
     </header>
     <main>
-        <!-- Initially show this button -->
         <button id="nudge-btn">Get Nudge</button>
 
-        <!-- This is hidden by default -->
+        <!-- Hidden initially, will show after getting the nudge -->
         <div id="nudge-prompt" class="hidden">
+            <p id="nudge-message"></p> <!-- Prompt text will be displayed here -->
+            <button id="done-btn">Done</button>
+        </div>
+
+        <!-- This will show when the user has completed the nudge -->
+        <div id="completed-message" class="hidden">
             <p>You've completed today's nudge! Go reward yourself.</p>
-            <!-- Initially hidden -->
-            <button id="done-btn" class="hidden">Done</button>
         </div>
     </main>
+
     <script src="app.js"></script>
 </body>
 </html>
